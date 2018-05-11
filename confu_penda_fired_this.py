@@ -46,7 +46,7 @@ device = sh1106(serial, rotate=2) #sh1106
 #Sensor Setup
 sensor = Adafruit_DHT.DHT11
 pin = 4
-light_pin=21
+light_pin = 21
 #Firebase Setup
 firebase = firebase.FirebaseApplication('https://laxz-fired-project.firebaseio.com/', None)
 
@@ -85,7 +85,8 @@ def getRAMinfo():
             return(line.split()[1:4])
 
 def getCPUuse():
-    return(str(pop("top -n1 | awk '/Cpu\(s\):/ {print $2}'").readline().strip(\)))
+    return(str(pop("top -n1 | awk '/Cpu\(s\):/ {print $2}'").readline().strip(/
+)))
 
 def getDiskSpace():
     p = pop("df -h /")
@@ -187,20 +188,20 @@ def light_up():
     GPIO.output(light_pin,1)
 def light_down():
     GPIO.output(light_pin,0)
-while True:
-    try:
+try:
+    while True:
         light_up()
         updatePiInfo()
         light_down()
         print("")
-        min_max_sensor()
+        #min_max_sensor()
         #Retrieve sleep time from firebase and continue the loop
-        sleepTime = firebase.get("/Settings/info_update_time_interval", None)
-        sleepTime = int(sleepTime)
-        sleep(sleepTime)
-    except KeyboardInterrupt:
-        print("Press Ctrl+Z to stop the Script")
-        continue
-    finally:
-        print("Stopped the Script")
+        #sleepTime = firebase.get("/Settings/info_update_time_interval", None)
+        #sleepTime = int(sleepTime)
+        #sleep(sleepTime)
+        time.sleep(5)
+except KeyboardInterrupt:
+        print("Interrupted")
+        #continue
+
 
