@@ -2,7 +2,7 @@ F!rebase - Realtime Database
 ===
 
 
-## [IOT-RPI]()
+## [IOT-RPI](https://github.com/minlaxz/realtime-db-firebase/tree/master/rpi-iot)
 
 1. Connection between OLED (SH1106) Raspberry Pi SPI Interface.
 
@@ -19,7 +19,7 @@ F!rebase - Realtime Database
 8. Controlling GPIO of Raspberry Pi with G-assistant
 
 
-## [PC <-> Firebase]() 
+## [PC <-> Firebase](https://github.com/minlaxz/realtime-db-firebase/tree/master/pc-firebase) 
 
 1. PC stats to Firebase
 
@@ -29,7 +29,7 @@ F!rebase - Realtime Database
 
 4. Firebase auth api (admin)
 
-## [RPI <-> Firebase]()
+## [RPI <-> Firebase](https://github.com/minlaxz/realtime-db-firebase/tree/master/pi-firebase)
 
 1. Realtime update user input to firebase
 
