@@ -1,7 +1,7 @@
-import firebase_init_laxz as laxz
+import firebase_init as laxz
 import time
 import oledDevice
-def userDef_data():
+def ud_data():
     try:
         userDef = input("Enter Data to Update: ")
         database_ref = laxz.db.reference('restricted_access')
