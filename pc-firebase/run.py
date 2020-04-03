@@ -1,4 +1,4 @@
-import user_define as userDef
+import user_def as ud
 if __name__ == '__main__':
     while True:
-        userDef.userDef_data()
+        ud.ud_data()

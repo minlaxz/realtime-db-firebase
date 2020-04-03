@@ -1,9 +1,9 @@
-import firebase_init_laxz as laxz
+import firebase_init as laxz
 from sys import exit
 import time
 
 
-def userDef_data():
+def ud_data():
     databaseRef = laxz.db.reference('restricted_access')
     ref = getData(databaseRef)
     for key , val in ref.items():
