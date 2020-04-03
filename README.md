@@ -1,13 +1,8 @@
-Realtime db - F!rebase
+F!rebase - Realtime Database
 ===
 
-## PC <-> Firebase
 
-1. PC stats to Firebase
-
-2. Remotely monitor PC stats from anywhere (hosting Firebase Hosting)
-
-## RASPBERRY PI <-> Firebase 
+## [IOT-RPI]()
 
 1. Connection between OLED (SH1106) Raspberry Pi SPI Interface.
 
@@ -22,3 +17,22 @@ Realtime db - F!rebase
 7. Using Google Assistance on Raspberry Pi
 
 8. Controlling GPIO of Raspberry Pi with G-assistant
+
+
+## [PC <-> Firebase]() 
+
+1. PC stats to Firebase
+
+2. Remotely monitor PC stats from anywhere (hosting Firebase Hosting)
+
+3. Realtime update user input to firebase
+
+4. Firebase auth api (admin)
+
+## [RPI <-> Firebase]()
+
+1. Realtime update user input to firebase
+
+2. OLED - sh1106 - SPI
+
+3. Firebase auth api (admin)
