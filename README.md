@@ -1,6 +1,14 @@
 Realtime db - F!rebase
 ===
 
+## PC <-> Firebase
+
+1. PC stats to Firebase
+
+2. Remotely monitor PC stats from anywhere (hosting Firebase Hosting)
+
+## RASPBERRY PI <-> Firebase 
+
 1. Connection between OLED (SH1106) Raspberry Pi SPI Interface.
 
 2. Monitor Sensor information on OLED.
